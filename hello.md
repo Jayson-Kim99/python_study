@@ -21,3 +21,11 @@ markdown language를 검색하면
 3. 메서드 
 
 관련 수업을 할 예정
+
+다음부터 깃허브에 올릴 때 커맨드 키 
+
+git add .
+
+git commit -m "feat : 202512 hello.md uploaded"
+
+git push
