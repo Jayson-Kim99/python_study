@@ -23,24 +23,38 @@ MENU = {
         "가격" : 3.0,
     }
 }
-# print(MENU)
-# print(MENU["라떼"]["재료"]["우유"])
-# # 카푸치노의 가격을 콘솔에 출력
-# # 에스프레소의 물 양을 콘솔
-# print(MENU["카푸치노"]["가격"])
-# print(MENU["에스프레소"]["재료"]["물"])
+
 profit = 0
 resources = {
     "물" : 300,
     "우유" : 200,
     "커피" : 100,
 }
+# print(MENU)
+# print(MENU["라떼"]["재료"]["우유"])
+# # 카푸치노의 가격을 콘솔에 출력
+# # 에스프레소의 물 양을 콘솔
+# print(MENU["카푸치노"]["가격"])
+# print(MENU["에스프레소"]["재료"]["물"])
+# profit = 0
+# resources = {
+#     "물" : 300,
+#     "우유" : 200,
+#     "커피" : 100,
+# }
 # resources 에서 에스프레소 두잔을 뽑았을 때, 남는 물,우유,커피량을 연산하고,
 # 그 결과를 콘솔에 출력하시오
-resources["물"]-= MENU["에스프레소"]["재료"]["물"]*2
-resources["커피"]-= MENU["에스프레소"]["재료"]["커피"]*2
-print([resources])
+# resources["물"]-= MENU["에스프레소"]["재료"]["물"]*2
+# resources["커피"]-= MENU["에스프레소"]["재료"]["커피"]*2
+# print([resources])
 # 이상을 진행했을 때 커피 두잔이 자판기에서 나왔기 때문에 자판기에는 돈이 들어감
 # 자판기에 profit 변수에 적절한 가격을 대입
-profit += MENU["에스프레소"]["가격"] *2
-print(profit)
+# profit += MENU["에스프레소"]["가격"] *2
+# print(profit)
+
+choice = input("어떤 음료를 드시겠습니까? 에스프레소/라떼/카푸치노 >>> ")
+
+#로고 (text to ascii art 사이트 )
+#off 입력 시 입력하면 종료
+#report 입력 시 resources와 profit을 참조 manual로 콘솔에 출력
+#잘못 입력시 잘못 입력하셨습니다 안내문 출력
