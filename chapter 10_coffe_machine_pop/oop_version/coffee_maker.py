@@ -19,7 +19,7 @@ class CoffeeMaker:
         for item in drink.ingredients:
             if drink.ingredients[item] > self.resources[item]:
                 print(f"죄송합니다. {item}가(이) 충분하지 않습니다.")
-                can_make = False
+                can_make = False0
         return can_make
 
     def make_coffee(self, order):
